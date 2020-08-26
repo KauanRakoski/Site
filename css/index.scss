@@ -1,28 +1,29 @@
-html{
+html {
     scroll-behavior: smooth;
+    cursor: url("../assets/cursor 1.png");
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header:nth-of-type(1){
+header:nth-of-type(1) {
     height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    .logo{
+    .logo {
         margin-left: -96px;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 17pt;
     }
 
-    .menu{
-        .nav-ul{
+    .menu {
+        .nav-ul {
             list-style: none;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 17pt;
             width: 500px;
             display: flex;
@@ -30,97 +31,179 @@ header:nth-of-type(1){
         }
     }
 }
-.hero{
+.hero {
     display: flex;
     width: 100%;
+    height: 650px;
     justify-content: space-around;
     align-items: center;
 
-
-    .hero-content{
+    .hero-content {
         margin-left: 170px;
         height: 400px;
         justify-content: space-around;
         display: flex;
         flex-direction: column;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
 
-        .hero-title{
-            font-size: 32pt;
+        .hero-title {
+            h1 {
+                font-size: 40pt;
+                line-height: 1.4;
+            }
 
-            span{
+            span {
                 color: rgb(146, 146, 146);
             }
         }
 
-        .hero-par{
-            p{
-                font-family: 'Poppins', sans-serif;
+        .hero-par {
+            p {
+                font-family: "Poppins", sans-serif;
                 font-size: 23pt;
                 width: 680px;
                 text-align: justify;
             }
         }
-        .cta{
+        .cta {
             color: white;
-            
+            cursor: pointer;
             padding: 1em 2em;
-            
-            background-color: #51ADEF;
+
+            background-color: #51adef;
         }
-        .cta2{
-            color: #51ADEF;
+        .cta2 {
+            cursor: pointer;
+            color: #51adef;
+            padding-left: 1em;
         }
     }
-    .hero-img{
+    .hero-img {
         margin-right: 230px;
     }
 }
 
-.work{
-    margin-top: 30px;
+.work {
+    padding: 30px 0;
+   
+    margin: 30px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h1{
+    h1 {
         text-align: center;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 28pt;
         margin-bottom: 130px;
     }
 
-    .app{
+    .app {
         display: flex;
         justify-content: space-around;
 
-        img{
-            width: 400px;
+        img {
+            width: 630px;
             height: 400px;
             border-radius: 10px;
-            box-shadow: 1px 1px 2px gray;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0,0.3), -2px -2px 3px rgba(0, 0, 0, 0.2);
         }
-        .app-resume{
+        .app-resume {
             margin-left: 35px;
             display: flex;
             justify-content: space-around;
             height: 300px;
             flex-direction: column;
-            
 
-            h2{
-                font-family: 'Montserrat', sans-serif;
+            h2 {
+                font-family: "Montserrat", sans-serif;
                 font-size: 28pt;
             }
-            p{
-                font-family: 'Poppins', sans-serif;
+            p {
+                font-family: "Poppins", sans-serif;
                 width: 500px;
                 font-size: 18pt;
             }
-            .btns{
-                display:flex;
+            .btns {
+                display: flex;
                 flex-direction: column;
             }
         }
+    }
+}
+.btn-demo {
+    width: 130px;
+    background: transparent;
+    border: none;
+    font-size: 15pt;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    span{
+        
+        position: relative;
+        left: 20px;
+        color: black;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    position: relative;
+    height: 40px;
+
+    &::before {
+        outline: none;
+        opacity: 1;
+        content: "";
+        width: 20px;
+        position: absolute;
+        top: 12.5px;
+        z-index: -1;
+        left: 5px;
+        height: 20px;
+        display: block;
+        background: #51adef;
+        transition: all 250ms ease-in;
+    }
+
+    &:hover {
+        &::before {
+            width: 160px;
+        }
+    }
+}
+.btn-code {
+    outline: none;
+    width: 150px;
+    border: none;
+    position: relative;
+    background: none;
+    display: flex;
+
+    .text-btn {
+        color: black;
+        font-size: 15pt;
+        padding-left: 30px;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: bold;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+        width: 20px;
+        height: 20px;
+        background: url("https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg");
     }
 }
