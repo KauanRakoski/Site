@@ -6,8 +6,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,72 +16,47 @@ body {
 header:nth-of-type(1) {
   height: 100px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 header:nth-of-type(1) .logo {
   margin-left: -96px;
   font-family: "Poppins", sans-serif;
   font-size: 17pt;
 }
-
 header:nth-of-type(1) .menu .nav-ul {
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-size: 17pt;
   width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 650px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .hero .hero-content {
   margin-left: 170px;
   height: 400px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-around;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
 }
-
 .hero .hero-content .hero-title h1 {
   font-size: 40pt;
   line-height: 1.4;
   margin-bottom: -30px;
 }
-
 .hero .hero-content .hero-title span {
   color: #929292;
 }
-
 .hero .hero-content .hero-par p {
   color: #555555;
   font-family: "Poppins", sans-serif;
@@ -90,7 +64,6 @@ header:nth-of-type(1) .menu .nav-ul {
   width: 680px;
   text-align: justify;
 }
-
 .hero .hero-img {
   margin-right: 230px;
 }
@@ -101,53 +74,40 @@ header:nth-of-type(1) .menu .nav-ul {
   padding: 0.8em 1em;
   background-color: #0076ff;
   width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 7px;
-  -webkit-box-shadow: 0 6px 20px rgba(0, 118, 255, 0.23);
-          box-shadow: 0 6px 20px rgba(0, 118, 255, 0.23);
+  box-shadow: 0 6px 20px rgba(0, 118, 255, 0.23);
   text-decoration: none;
+  transition: all 350ms;
+}
+.cta:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #0066f1;
 }
 
 .work {
   padding: 30px 0;
   margin: 30px 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .work h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 28pt;
   margin-bottom: 130px;
 }
-
 .work .app {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-
 .work .app img {
   margin: 0;
   padding: 0;
@@ -157,39 +117,28 @@ header:nth-of-type(1) .menu .nav-ul {
   height: 550px;
   border-radius: 10px;
 }
-
-.work .app .app-resume {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.work .app .lefty {
+  margin-left: 340px !important;
 }
-
+.work .app .app-resume {
+  margin: 0 auto 0 0;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  flex-direction: column;
+}
 .work .app .app-resume h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 28pt;
 }
-
 .work .app .app-resume p {
   font-family: "Poppins", sans-serif;
   width: 450px;
   font-size: 18pt;
 }
-
 .work .app .app-resume .btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .btn-demo {
@@ -202,18 +151,15 @@ header:nth-of-type(1) .menu .nav-ul {
   position: relative;
   height: 40px;
 }
-
 .btn-demo span {
   position: relative;
   left: 20px;
   color: black;
 }
-
 .btn-demo span a {
   color: black;
   text-decoration: none;
 }
-
 .btn-demo::before {
   outline: none;
   opacity: 1;
@@ -226,10 +172,8 @@ header:nth-of-type(1) .menu .nav-ul {
   height: 20px;
   display: block;
   background: #51adef;
-  -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
-
 .btn-demo:hover::before {
   width: 160px;
 }
@@ -240,11 +184,8 @@ header:nth-of-type(1) .menu .nav-ul {
   border: none;
   position: relative;
   background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .btn-code .text-btn {
   color: black;
   font-size: 15pt;
@@ -252,12 +193,10 @@ header:nth-of-type(1) .menu .nav-ul {
   font-family: "Segoe UI", sans-serif;
   font-weight: bold;
 }
-
 .btn-code .text-btn a {
   color: black;
   text-decoration: none;
 }
-
 .btn-code::before {
   content: "";
   display: block;
@@ -270,24 +209,16 @@ header:nth-of-type(1) .menu .nav-ul {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   border-top: 1px solid gray;
   padding: 1em;
 }
-
 footer h2 {
   font-size: 13pt;
 }
-
 footer .contact img:nth-of-type(1) {
   width: 30px;
   height: 30px;
@@ -295,65 +226,38 @@ footer .contact img:nth-of-type(1) {
 
 .contact-section {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact-section .contact-form {
   margin: 70px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   padding: 2em 2em;
   width: 600px;
   border-radius: 3px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .contact-section .contact-form button {
   width: 400px;
   outline: none;
   border: none;
 }
-
 .contact-section .contact-form .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 400px;
   margin: 20px 0;
 }
-
 .contact-section .contact-form .form-group input, .contact-section .contact-form .form-group textarea {
-  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
   border: none;
   padding: 1em;
   border-radius: 4px;
   background-color: rgba(199, 199, 199, 0.2);
 }
-
 .contact-section .contact-form .form-group input:focus, .contact-section .contact-form .form-group textarea:focus {
   background-color: rgba(199, 199, 199, 0.5);
 }
-/*# sourceMappingURL=index.css.map */

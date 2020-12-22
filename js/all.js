@@ -1,22 +1,49 @@
 gsap.registerPlugin(ScrollTrigger)
 
-gsap.from(".come-right", {
+// Fade-in images
+gsap.utils.toArray(".fade-in").forEach(fader => {
+  var tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".come-right",
-        start: "top bottom"
-    },
-    duration: 1,
-     opacity: 0, 
-     x:200,
+      trigger: fader,
+      start: "top 95%",
+    }
+  });
+
+  tl.from(fader, {
+    duration: 2,
+    opacity: 0
+  });
 });
 
-gsap.from(".fade-in", {
+// Trigger for the text that comes from left
+gsap.utils.toArray(".come-left").forEach(lefty => {
+  var tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".fade-in",
-        start: "top bottom"
-    },
-    duration: 2,
-    opacity: 0,
-     
-     
+      trigger: lefty,
+      start: "top 95%",
+    }
+  });
+
+  tl.from(lefty, {
+    duration: 1,
+     opacity: 0, 
+     x: -200,
+  });
 });
+
+// Trigger for the text that comes from right
+gsap.utils.toArray(".come-right").forEach(righty => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: righty,
+      start: "top 95%",
+    }
+  });
+
+  tl.from(righty, {
+    duration: 1,
+     opacity: 0, 
+     x: 200,
+  });
+});
+
