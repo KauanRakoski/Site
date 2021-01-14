@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 html {
     scroll-behavior: smooth;
     cursor: url("../assets/cursor 1.png");
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 header:nth-of-type(1) {
     height: 100px;
     width: 100%;
@@ -18,26 +24,45 @@ header:nth-of-type(1) {
     align-items: center;
 
     .logo {
-        margin-left: -96px;
-        font-family: "Poppins", sans-serif;
-        font-size: 17pt;
+        margin-left: -134px;
+        font-family: "Sora", sans-serif;
+        font-size: 15pt;
+        color: #002fff;
     }
 
     .menu {
         .nav-ul {
+            
             list-style: none;
-            font-family: "Poppins", sans-serif;
-            font-size: 17pt;
-            width: 500px;
+            font-family: "Inter", sans-serif;
+            font-size: 15pt;
+            width: 460px;
             display: flex;
             justify-content: space-around;
+
+            li {
+                
+                font-weight: 500;
+                a {
+                    border-radius: 8px;
+                    transition: all 300ms ease-in-out;
+                    padding: 0.3em 1em;
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: rgba(0,0,0, 0.1);
+                    }
+                }
+            }
         }
     }
 }
+
 .hero {
     display: flex;
     width: 100%;
-    height: 650px;
+    height: 600px;
     justify-content: space-around;
     align-items: center;
 
@@ -50,8 +75,11 @@ header:nth-of-type(1) {
         font-family: "Montserrat", sans-serif;
 
         .hero-title {
+            font-family: "Sora";
+            font-weight: 400;
+
             h1 {
-                font-size: 40pt;
+                font-size: 50px;
                 line-height: 1.4;
                 margin-bottom: -30px;
             }
@@ -63,36 +91,39 @@ header:nth-of-type(1) {
 
         .hero-par {
             p {
-                color: rgb(85, 85, 85);
-                font-family: "Poppins", sans-serif;
-                font-size: 21pt;
+                color: #6a6e81;
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 19pt;
                 width: 680px;
-                text-align: justify;
+                margin-bottom: -20px;
             }
         }
-        
-        
+
+
     }
+
     .hero-img {
         margin-right: 230px;
     }
 }
 
 .cta {
+    margin: 0;
     color: white;
     cursor: pointer;
     padding: 0.8em 1em;
     background-color: #0076ff;
-    width: 250px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    box-shadow: 0 6px 20px rgba(0,118,255,0.23);
+    box-shadow: 0 6px 20px rgba(0, 118, 255, 0.23);
     text-decoration: none;
     transition: all 350ms;
 
-    &:hover{
+    &:hover {
         text-decoration: none;
         color: white;
         background-color: #0066f1;
@@ -100,9 +131,9 @@ header:nth-of-type(1) {
 }
 
 .work {
-    padding: 30px 0;
-   
-    margin: 30px 0;
+    padding: 20px 0;
+
+    margin: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -110,7 +141,7 @@ header:nth-of-type(1) {
 
     h1 {
         text-align: center;
-        font-family: "Poppins", sans-serif;
+        font-family: "Sora";
         font-size: 28pt;
         margin-bottom: 130px;
     }
@@ -126,15 +157,17 @@ header:nth-of-type(1) {
             padding: 0;
             margin-top: -100px;
             z-index: -1;
-            
+
             width: 780px;
             height: 550px;
             border-radius: 10px;
-            
+
         }
-        .lefty{
+
+        .lefty {
             margin-left: 340px !important;
         }
+
         .app-resume {
             margin: 0 auto 0 0;
             display: flex;
@@ -143,14 +176,18 @@ header:nth-of-type(1) {
             flex-direction: column;
 
             h2 {
-                font-family: "Montserrat", sans-serif;
+                font-family: "Inter", sans-serif;
+                font-weight: 500;
                 font-size: 28pt;
             }
+
             p {
-                font-family: "Poppins", sans-serif;
+                font-family: "Inter", sans-serif;
+                font-weight: 300;
                 width: 450px;
                 font-size: 18pt;
             }
+
             .btns {
                 display: flex;
                 flex-direction: column;
@@ -158,6 +195,7 @@ header:nth-of-type(1) {
         }
     }
 }
+
 .btn-demo {
     width: 130px;
     background: transparent;
@@ -165,17 +203,19 @@ header:nth-of-type(1) {
     font-size: 15pt;
     font-family: "Segoe UI", sans-serif;
     font-weight: bold;
-    span{
-        
+
+    span {
+
         position: relative;
         left: 20px;
         color: black;
 
-        a{
+        a {
             color: black;
             text-decoration: none;
         }
     }
+
     position: relative;
     height: 40px;
 
@@ -200,6 +240,7 @@ header:nth-of-type(1) {
         }
     }
 }
+
 .btn-code {
     outline: none;
     width: 150px;
@@ -215,7 +256,7 @@ header:nth-of-type(1) {
         font-family: "Segoe UI", sans-serif;
         font-weight: bold;
 
-        a{
+        a {
             color: black;
             text-decoration: none;
         }
@@ -234,7 +275,7 @@ header:nth-of-type(1) {
     }
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -242,26 +283,27 @@ footer{
     border-top: 1px solid gray;
     padding: 1em;
 
-    h2{
+    h2 {
         font-size: 13pt;
     }
 
-    .contact{
-        img:nth-of-type(1){
+    .contact {
+        img:nth-of-type(1) {
             width: 30px;
             height: 30px;
         }
     }
 }
 
-.contact-section{
+#contact {
+    padding-top: 15px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 
-    .contact-form{
+    .contact-form {
         margin: 70px 0;
         display: flex;
         flex-direction: column;
@@ -270,28 +312,29 @@ footer{
         width: 600px;
         border-radius: 3px;
         align-items: center;
-        
-        button{
+
+        button {
             width: 400px;
             outline: none;
             border: none;
         }
 
-        .form-group{
+        .form-group {
             display: flex;
             flex-direction: column;
             width: 400px;
             margin: 20px 0;
 
-            input, textarea{
+            input,
+            textarea {
                 transition: all 200ms ease-in;
                 border: none;
                 padding: 1em;
                 border-radius: 4px;
                 background-color: rgba(199, 199, 199, 0.2);
 
-                &:focus{
-                    background-color:  rgba(199, 199, 199, 0.5);
+                &:focus {
+                    background-color: rgba(199, 199, 199, 0.5);
                 }
             }
         }
