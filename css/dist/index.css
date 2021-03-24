@@ -110,6 +110,27 @@ header:nth-of-type(1) .menu .nav-ul li a:hover {
   background-color: #0066f1;
 }
 
+.brands {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px 0 150px 0;
+}
+.brands div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands div img {
+  margin-right: 40px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.7;
+}
+
 .work {
   padding: 20px 0;
   margin: 20px 0;
@@ -138,6 +159,14 @@ header:nth-of-type(1) .menu .nav-ul li a:hover {
   width: 780px;
   height: 550px;
   border-radius: 10px;
+}
+.work .app .img-s {
+  min-width: 780px;
+  min-height: 550px;
+  margin-left: 40px;
+}
+.work .app .img-s img {
+  width: 550px !important;
 }
 .work .app .lefty {
   margin-left: 340px !important;
@@ -260,7 +289,7 @@ footer .contact img:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  padding: 2em 2em;
+  padding: 2em 1em;
   width: 600px;
   border-radius: 3px;
   align-items: center;
