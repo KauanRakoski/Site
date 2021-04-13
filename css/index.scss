@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
+$theme-color:  #0076ff;
+
 html {
     scroll-behavior: smooth;
     cursor: url("../assets/cursor 1.png");
@@ -10,6 +12,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body {
@@ -23,10 +26,10 @@ header:nth-of-type(1) {
     justify-content: space-around;
     align-items: center;
 
-    .logo {
-        margin-left: -134px;
+    .logo h1{
+        margin-left: -170px;
         font-family: "Sora", sans-serif;
-        font-size: 15pt;
+        font-size: 18pt;
         color: #002fff;
     }
 
@@ -76,17 +79,18 @@ header:nth-of-type(1) {
         font-family: "Montserrat", sans-serif;
 
         .hero-title {
-            font-family: "Sora";
+            font-family: "Inter", sans-serif;
             font-weight: 400;
 
             h1 {
-                font-size: 50px;
+                font-size: 40px;
+                font-weight: bold;
                 line-height: 1.4;
-                margin-bottom: -30px;
+                margin-bottom: -60px;
             }
 
             span {
-                color: rgb(146, 146, 146);
+                color:  #0076ff
             }
         }
 
@@ -95,7 +99,7 @@ header:nth-of-type(1) {
                 color: #6a6e81;
                 font-family: 'Inter', sans-serif;
                 font-weight: 300;
-                font-size: 19pt;
+                font-size: 17pt;
                 width: 680px;
                 margin-bottom: -20px;
             }
@@ -114,7 +118,7 @@ header:nth-of-type(1) {
     color: white;
     cursor: pointer;
     padding: 0.8em 1em;
-    background-color: #0076ff;
+    background-color: $theme-color;
     width: 300px;
     display: flex;
     align-items: center;
@@ -128,6 +132,43 @@ header:nth-of-type(1) {
         text-decoration: none;
         color: white;
         background-color: #0066f1;
+    }
+}
+.stack{
+    width: 100%;
+    align-self: center;
+    margin: 50px 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        
+        h2{
+            width: 500px;
+            font-family: "Inter", sans-serif;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 32px;
+
+            span{
+                color: $theme-color;
+            }
+        }
+        p{
+            font-family: "Inter";
+            font-size: 20px;
+            width: 500px;
+        }
     }
 }
 

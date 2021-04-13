@@ -22,10 +22,10 @@ header:nth-of-type(1) {
   justify-content: space-around;
   align-items: center;
 }
-header:nth-of-type(1) .logo {
-  margin-left: -134px;
+header:nth-of-type(1) .logo h1 {
+  margin-left: -170px;
   font-family: "Sora", sans-serif;
-  font-size: 15pt;
+  font-size: 18pt;
   color: #002fff;
 }
 header:nth-of-type(1) .menu .nav-ul {
@@ -66,22 +66,23 @@ header:nth-of-type(1) .menu .nav-ul li a:hover {
   font-family: "Montserrat", sans-serif;
 }
 .hero .hero-content .hero-title {
-  font-family: "Sora";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 .hero .hero-content .hero-title h1 {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
   line-height: 1.4;
-  margin-bottom: -30px;
+  margin-bottom: -60px;
 }
 .hero .hero-content .hero-title span {
-  color: #929292;
+  color: #0076ff;
 }
 .hero .hero-content .hero-par p {
   color: #6a6e81;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  font-size: 19pt;
+  font-size: 17pt;
   width: 680px;
   margin-bottom: -20px;
 }
@@ -108,6 +109,40 @@ header:nth-of-type(1) .menu .nav-ul li a:hover {
   text-decoration: none;
   color: white;
   background-color: #0066f1;
+}
+
+.stack {
+  width: 100%;
+  align-self: center;
+  margin: 50px 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stack main {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stack div {
+  display: flex;
+  flex-direction: column;
+}
+.stack div h2 {
+  width: 500px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+.stack div h2 span {
+  color: #0076ff;
+}
+.stack div p {
+  font-family: "Inter";
+  font-size: 20px;
+  width: 500px;
 }
 
 .brands {
