@@ -23,10 +23,13 @@ header:nth-of-type(1) {
   align-items: center;
 }
 header:nth-of-type(1) .logo h1 {
-  margin-left: -170px;
+  margin-left: -70px;
   font-family: "Sora", sans-serif;
   font-size: 18pt;
   color: #002fff;
+}
+header:nth-of-type(1) .menu {
+  margin-left: 160px;
 }
 header:nth-of-type(1) .menu .nav-ul {
   list-style: none;
@@ -79,11 +82,11 @@ header:nth-of-type(1) .menu .nav-ul li a:hover {
   color: #0076ff;
 }
 .hero .hero-content .hero-par p {
-  color: #6a6e81;
+  color: #616369;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 17pt;
-  width: 680px;
+  width: 600px;
   margin-bottom: -20px;
 }
 .hero .hero-img {
@@ -140,30 +143,11 @@ header:nth-of-type(1) .menu .nav-ul li a:hover {
   color: #0076ff;
 }
 .stack div p {
+  color: #616369;
   font-family: "Inter";
+  line-height: 1.6;
   font-size: 20px;
   width: 500px;
-}
-
-.brands {
-  width: 100%;
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 70px 0 150px 0;
-}
-.brands div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.brands div img {
-  margin-right: 40px;
-  width: 60px;
-  height: 60px;
-  opacity: 0.7;
 }
 
 .work {
@@ -324,8 +308,8 @@ footer .contact img:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  padding: 2em 1em;
-  width: 600px;
+  padding: 2em 0em;
+  width: 500px;
   border-radius: 3px;
   align-items: center;
 }
@@ -339,6 +323,9 @@ footer .contact img:nth-of-type(1) {
   flex-direction: column;
   width: 400px;
   margin: 20px 0;
+}
+#contact .contact-form .form-group textarea {
+  height: 150px;
 }
 #contact .contact-form .form-group input,
 #contact .contact-form .form-group textarea {

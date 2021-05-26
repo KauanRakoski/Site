@@ -17,6 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script defer src="./js/all.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
     <title>Kauan Rakoski</title>
 </head>
 
@@ -42,7 +45,7 @@
                 <h1>I develop <span>great</span> product <br>experiences</h1>
             </div>
             <div class="hero-par">
-                <p>I am a student and passionate javascript developer. I work with front and backend.</p>
+                <p>I am a student and passionate JavaScript developer. I work with Frontend and Backend projects.</p>
             </div>
             <div>
                 <a class="cta" href="#work">See Work</a>
@@ -62,8 +65,7 @@
             <div>
                 <h2>Worked with these <span>products and libraries</span></h2>
                 <p>
-                    Most of what I do is done using JavaScript
-                    and NodeJs, alongside with Vue and Express
+                    I have experience with Vue, MongoDB, Firebase, Stripe, Docker, ElasticSearch, Algolia, and others.
                 </p>
             </div>
             
@@ -77,10 +79,11 @@
             <div class="app ">
 
                 <div class="app-resume come-left lefty">
-                    <h2>Jsint</h2>
+                    <h2>Apibox</h2>
 
-                    <p>Jsint is a serverless functions hosting app. The backend is built with Stripe and MongoDB and
-                        uses criptography.</p>
+                    <p> <i>Create APIs on the fly</i>. The app is built with Vue, Stripe and MongoDB and integrates
+                        with Github actions.
+                    </p>
 
                     <div class="btns">
                         <button class="btn-demo"><span><a target="_blank" href="https://jsint.vercel.app">See
@@ -145,15 +148,16 @@
             <h1>Get in touch</h1>
 
             <div class="contact-form">
-                <form action="">
+                <form action="" id="contact-form">
+                    <input type="hidden" name="contact_number">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" name="name" placeholder="Bruce Wayne" required>
+                        <input type="text" name="user_name" placeholder="Bruce Wayne" required>
                     </div>
 
                     <div class="form-group">
                         <label for="name">Email:</label>
-                        <input type="text" name="email" placeholder="example@email.com" required>
+                        <input type="text" name="user_email" placeholder="example@email.com" required>
                     </div>
 
                     <div class="form-group">
